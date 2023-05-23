@@ -1,0 +1,5 @@
+^C:\USERS\ADMINISTRADOR\DOCUMENTS\UNREAL PROJECTS\MULTIPLAYERPROJECT\STEAMSDK\SDK\STEAMWORKSEXAMPLE\STEAMWORKSEXAMPLE.VPC
+rem IncrediBuild_AllowOverlap
+if exist "..\devtools\bin\vpc.exe" "..\devtools\bin\vpc.exe" -crc2 "steamworksexample.vcxproj"
+if ERRORLEVEL 1 exit /b 1
+echo crc_complete > D:\dev\Steam\main\src\SteamWorksExample\steamworksexample.vpc.sentinel
